@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+nav .brandName {
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 20px;
+}
+
+.brandName .gray {
+    color: gray;
+}
+
+#one  {
+    height: 100vh;
+    background-color: black;
+    padding: 20px;
+
+}
+#one .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#one .one .text {
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+#one .one #smallerText {
+    font-size: 12px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#one .one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+#one .two {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+#one .two img{ 
+    height: 90vh;
+}
+
+#one .three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3 / 4;
+    grid-row: 1;
+}
+
+#one .three .text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+#one .three .text .gray {
+    color: gray;
+}
+
+hr {
+    height: 0.5px;
+    background-color: gray;
+    border: none;
+    margin: 0 10px;
+}
+
+#one hr {
+    margin-top: 10px;
+}
+
+/** Begining of container 2 **/
+
+#two {
+    height: 100vh;
+}
+
+#two .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#two .one {
+    display: flex;
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+#two .one img {
+    height: 100vh;
+    object-fit: cover;
+    width: 800px;
+}
+
+#two .two {
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+
