@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 
 * {
     margin: 0;
@@ -115,8 +116,9 @@ hr {
 
 #two .one img {
     height: 100vh;
+    width: 600px;
     object-fit: cover;
-    width: 800px;
+    margin-left: 60px;
 }
 
 #two .two {
@@ -124,5 +126,18 @@ hr {
     grid-column: 2 / 3;
     grid-row: 1;
 }
+
+#two .two h3{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 50px ;
+}
+
+#two .two #info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 
 
