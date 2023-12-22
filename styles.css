@@ -3,6 +3,7 @@
     padding: 0;
     background-color: black;
 }
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -15,8 +16,12 @@
 }
 
 .one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1 / 2;
     grid-row: 1;
+    
 }
 
 .two {
@@ -26,4 +31,27 @@
 
 .two img {
     height: 100vh;
+}
+
+.one .textContainer {
+    margin: 0 30px;
+    color: white;
+    
+}
+
+#brandLogo {
+    color: white;
+}
+
+nav h1 {
+    padding: 10px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: 20px;
+    height: 1px;
+    background-color: gray;
+    border: none;
 }
