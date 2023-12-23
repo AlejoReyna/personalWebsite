@@ -23,32 +23,32 @@ nav .brandName {
     color: gray;
 }
 
-#one  {
+#main  {
     height: 100vh;
     background-color: black;
     padding: 20px;
 
 }
-#one .wrapper {
+#main .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
 
-#one .one .text {
+#main .one .text {
     color: white;
     font-family: 'Fira Sans', sans-serif;
     font-size: 40px;
     margin-left: 20px;
 }
 
-#one .one #smallerText {
+#main .one #smallerText {
     font-size: 12px;
     font-family: 'Quicksand', sans-serif;
 }
 
-#one .one {
+#main .one {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,16 +57,16 @@ nav .brandName {
     grid-row: 1;
 }
 
-#one .two {
+#main .two {
     grid-column: 2 / 3;
     grid-row: 1;
 }
 
-#one .two img{ 
+#main .two img{ 
     height: 90vh;
 }
 
-#one .three {
+#main .three {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,13 +74,13 @@ nav .brandName {
     grid-row: 1;
 }
 
-#one .three .text {
+#main .three .text {
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
     color: white;
 }
 
-#one .three .text .gray {
+#main .three .text .gray {
     color: gray;
 }
 
@@ -97,47 +97,70 @@ hr {
 
 /** Begining of container 2 **/
 
-#two {
+#aboutMe {
     height: 100vh;
 }
 
-#two .wrapper {
+#aboutMe .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
 
-#two .one {
+#aboutMe .one {
     display: flex;
     grid-column: 1 / 2;
     grid-row: 1;
+
 }
 
-#two .one img {
-    height: 100vh;
-    width: 600px;
-    object-fit: cover;
-    margin-left: 60px;
+#aboutMe .one .images-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
 }
 
-#two .two {
+#aboutMe .one .slider-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;    
+}
+
+#aboutMe .one .slider-img-container {
+    flex: 0 0 100%;
+}
+
+#aboutMe .two {
     display: flex;
     grid-column: 2 / 3;
     grid-row: 1;
 }
 
-#two .two h3{
-    font-family: 'Pixelify Sans', sans-serif;
-    font-size: 50px ;
+#aboutMe .two h3{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 40px ;
 }
 
-#two .two #info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+#aboutMe .two .info {
+    padding: 40px;
+    font-family: 'Quicksand', sans-serif;
 }
 
+#aboutMe .info .uanl {
+    font-weight: 700;
+}
 
+.yellow{
+    color: rgb(239, 217, 75);
+}
 
+.blue {
+    color: rgba(23, 86, 222, 0.863);
+}
+
+/* Code of slider */
+
+.slider {
+    overflow: hidden;
+}

@@ -6,10 +6,11 @@
     <title> Alexis Reyna | Dev</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/d6b454d5de.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div class="container" id="one">
+    <div class="container" id="main">
         <nav>
             <div class="brandName">
                 <h2> Alexis Reyna <span class="gray"> | &lt; Developer /&gt; </span> </h2>
@@ -29,7 +30,7 @@
             </div>
 
             <div class="two">
-                <img src="gray-me.png">
+                <img src="images/me.png">
             </div>
 
             <div class="three">
@@ -47,48 +48,51 @@
         <hr>
     </div>
 
-    <div class="container" id="two">
+    <div class="container" id="aboutMe">
         <div class="wrapper">
             <div class="one">
-                <img src="hackathon.JPG">
-            </div>
-            
-            <div class="two">
-               
-                <span id="info">
-                    <h3> Some info about me </h3>
-                    <br>
-                    I'm a Software Engineering student at the Universidad Autónoma de Nuevo León, located in the state of Nuevo León, México. I've attended several hackathons.
-                    <br>
-                    At college, I'm proudly part of the 'IMUA Lima-Lama' (a polinesian martial art) representative team of the Facultad Ingeniería Mecánica y Eléctrica, where I won twice a 2nd place medal and a 3rd place on tournaments.
-                    <br>
-                    I love to play guitar and eat burritos.
-                </span>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" id="one">
+                <div class="slider">
+                    <button id="prevBtn"> Previous </button>
+                    <button id="nextBtn"> Next </button>
+                    <div class="images-container">
+                        <div class="slider-img-container">
+                            <img src="images/hackathon.JPG" class="slider-img">
+                        </div>
+                        <div class="slider-img-container">
+                            <img src="images/3rd.jpg" class="slider-img">
+                        </div>
+                        <div class="slider-img-container">
+                            <img src="images/medal.jpeg" class="slider-img">
+                        </div>
+                    </div>
+                </div>
+            </div>  
         
-        <div class="wrapper">
-            <div class="one">
-                <div class="text">
-               
+                
+            <div class="two">
+                <div class="info">
+                    <!-- This h3 needs to be in Fira Sans -->
+                    <h3> Some info about me </h3>
+                    <hr>
+                    <!-- And this part -->
+                    <div class="description">
+                    I'm a Software Engineering student at the 
+                        <div class="uanl"> 
+                            <span class="yellow"> Universidad </span>
+                            <span class="blue"> Autónoma </span> 
+                            <span class="yellow"> de </span> 
+                            <span class="blue">  Nuevo León </span> </div> , located in the state of Nuevo León, México.
+                        </div>
+                        At college, I'm proudly part of the 'IMUA Lima-Lama' (a polinesian martial art) representative team of the Facultad Ingeniería Mecánica y Eléctrica, where I won twice a 2nd place medal and a 3rd place on tournaments.
+                    
+                        <br>
+                        I love to play guitar and eat burritos.
+                    </div>
                 </div>
             </div>
-
-            <div class="two">
-                
-            </div>
-
-            <div class="three">
-                
-            </div>
         </div>
-
-      
     </div>
 
-
+    <script src="script.js"></script>
 </body>
 </html>
