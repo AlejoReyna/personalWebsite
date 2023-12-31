@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hello {
+    background-color: black;
+    height: 100vh;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    color: white;
+    text-align: center;
+}
+
+.two {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.one img{ 
+    height: 80vh;
+}
+
+.text {
+    margin: 1rem;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 40px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+ #smallerText {
+    font-size: 12px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.smallScreen {
+    display: none;
+}
+
+.tag {
+    color: #808080;
+}
+
+.blue {
+    color: #569cd6;
+}
+
+.cian:hover {
+    color: #9cdcfe
+}
+
+.cian:hover a {
+    color: #9cdcfe
+}
+
+@media (max-width: 768px) {
+}
+
+/* Estilos para pantallas pequeñas (por ejemplo, teléfonos móviles) */
+@media (max-width: 480px) {
+   .wrapper {
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .text {
+    font-size: 30px;
+   }
+
+   .two {
+    display: none;    
+   }
+
+   .smallScreen {
+    color: wheat;
+    display: flex;
+   }
+}

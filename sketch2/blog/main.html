@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BlogTest </title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/dropdownMenu.css">
+</head>
+
+<body>
+    <nav> 
+        <div class="mainNavbar">
+            <i id="dropdownMenu" class="fa-solid fa-bars"></i>
+            <div id="dropdown-menu" class="dropdown-menu">
+                <ul>
+                    <li> <i id="backPage" class="fa-solid fa-arrow-left"></i> </li>
+                    <li class="cian"> About me </li>
+                    <li class="cian"> Projects </li>
+                    <li class="cian"> <a href="../blog/main.html"> Blog </a> </li>
+                    <li class="cian"> Contact </li>
+                </ul>
+            </div>
+            <div id="brandName">
+                Alejo Reyna <span class="tag"> | 
+                 &lt; </span> <span class="blue"> DevBlog </span> <span class="tag"> /&gt; </span>
+        </div>
+        </div>
+
+            <!-- This nav just appears when on +700px width screen-->
+        <div class="subNavbar">
+            <div class="elements">
+                <ul class="elementsList">
+                    <li class="cian"> About me </li>
+                    <li class="cian"> Projects </li>
+                    <li class="cian"> <a href="../blog/main.html"> Blog </a> </li>
+                    <li class="cian"> Contact </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        
+        <section class="blog">
+            <div class="container-flex">
+                <h3> Latest entrances</h3>
+                <div class="postsList">
+                    <div class="box">
+                        <div class="imgPreview">
+                            <img src="no-img.jpg" alt="Example Image">
+                        </div>
+
+                        <div class="textPreview">
+                            <h1> Example Title </h1>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, nam!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d6b454d5de.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

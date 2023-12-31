@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: rgb(31, 31, 31);
+    height: 100vh;
+}
+
+.blog {
+    padding: 20px;
+}
+
+.blog h3 {
+    color: rgb(255, 255, 255);
+    font-family: 'Newsreader', serif;;
+    font-size: 20px;
+}
+
+.postsList {
+    background-color: bisque;
+    height: 85vh;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 2fr 3fr; /* Divide en dos columnas, 40% y 60% del tamaño */
+    border: 1px solid #ccc;
+    height: 200px;
+}
+
+.imgPreview {
+    height: 100%;
+}
+
+.imgPreview img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ajusta el tamaño y recorte de la imagen según sea necesario */
+}
+
+.tag {
+    color: #808080;
+}
+
+.blue {
+    color: #569cd6;
+}
+
+.cian:hover {
+    color: #9cdcfe
+}
+
+.cian:hover a {
+    color: #9cdcfe
+}

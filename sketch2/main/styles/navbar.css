@@ -1,0 +1,75 @@
+/** Main Navbar Styles **/
+.mainNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #1a1919;
+    color: white; 
+    height: 1rem;
+}
+
+#dropdownMenu {
+    display: none;
+ }
+ 
+ #brandName {
+     font-family: 'Fira Sans', sans-serif;
+     text-align: center; /* Centra el texto en la navbar */
+     flex-grow: 1;
+}
+
+/** Main Navbar Styles **/
+
+/** Subnavbar Styles **/
+.subNavbar {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    background-color: #1d1c1c;
+}
+
+.elements {
+    display: flex;
+    align-items: center;
+}
+
+.elements li a {
+    text-decoration: none;
+    color: white;
+}
+
+.elementsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+.elementsList li {
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+}
+/** Subnavbar Styles **/
+
+
+
+@media screen and (max-width: 500px) {
+
+    .mainNavbar {
+        height: 2rem;
+    }
+    #dropdownMenu {
+        display: flex;
+        cursor: pointer;
+    }     
+    
+    .subNavbar {
+        display: none;
+    }
+}
+
